@@ -1,0 +1,48 @@
+
+body{
+font-family: DejaVu Sans;
+}
+.docTitle{
+    font-size: 18px;
+}
+.docCont{
+    font-size: 10px;
+}
+.part{
+    border: 1px black solid;
+    
+}
+.part p, h3{
+    margin-left: 5px;
+}
+table {
+    width: 200px;
+   
+    border-collapse: collapse;
+    text-align: center;
+    
+}
+table tr td{
+    border: 1px solid black;
+}
+.sign h3{
+    display: inline;
+}
+.l1{
+    float: left;
+    margin-left: 50px;
+}
+.r1{
+    margin-left: 0px;
+    margin-right: 80px;
+    float: right;
+}
+.footer{
+    font-size: 8px;
+    text-align: left;
+}
+
+.comm{
+    border: 1px solid black;
+    height: 400px;
+}

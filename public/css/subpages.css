@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    
+    background: #999d9e63;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+.sidebar{
+    position: fixed;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background-color: #234788;
+    
+    
+}
+
+.sidebar ul{
+    position: fixed;
+    top:20%
+    
+}
+
+.sidebar ul a{
+    margin-top: 30px;
+    display: block;
+   
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+   padding-left: 15px;
+    box-sizing: border-box;
+
+}
+
+ul li:hover a{
+    padding-right: 2px;
+}
+
+.sidebar ul a i{
+    margin-right: 16px;
+}
+.tabel_container{
+  margin-left: 100px;
+}
+
+
+
+  .search-lokals{
+    position: absolute;
+    width: 90%;
+    height: 75px;
+    left: 100px;
+    top: 25px;
+
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+.search-lokals h1{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #5A75F8;
+    border-right: none;
+    padding: 5px;
+    height: 35px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+    color: #19ABE3;
+  }
+  
+  .searchButton {
+    width: 50px;
+    height: 50px;
+    
+    border: 1px solid #19ABE3;
+    background: #19ABE3;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap{
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .icons{
+    position: absolute;
+    left:95%;
+    top:20px;
+   
+  }
+  .icons a i{
+    width: 40px;
+    height: 40px;
+    font-size: 35px;
+    padding: none;
+    margin-left: 10px;
+    
+    text-align: center;
+    color: #5A75F8;
+  }
+
+  .container{
+    position: absolute;
+    width: 90%;
+    height: 95%;
+    left: 100px;
+    top: 150px;
+
+    background: #ffffff;
+    border-radius: 5px;
+    
+  }
+  .container2{
+    position: absolute;
+    width: 90%;
+    height: 30%;
+    left: 100px;
+    top: 150px;
+
+    background: #ffffff;
+    border-radius: 5px;
+  }
+  
+  
+  .Btn{
+    display:flex;
+    justify-content: left;
+    flex-direction: row;
+    margin-left:75px;
+    margin-top:30px;
+    
+  }
+  
+  
+  .addBtn{
+   
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    transform: translate(-14);
+    cursor: pointer;
+    color: black;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    transition: all .4s;
+    color: black;
+    
+}
+.addUserBtn{
+  width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    transform: translate(-14);
+    cursor: pointer;
+    color: black;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    transition: all .4s;
+    color: black;
+}
+.backBtn{
+   
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-top: 10px;
+  transform: translate(-14);
+  cursor: pointer;
+  color: white;
+  background:#89ab57;
+  transition: all .4s;
+  color: black;
+  
+}
+.backBtn :visited
+{
+   color: white
+}
+.docBtn{
+  width: 380px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    transform: translate(-14);
+    cursor: pointer;
+    color: black;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    transition: all .4s;
+    color: black;
+}
+.text{
+    font-size: 1em;
+    margin-top: 0.5em;
+    text-align: center;
+    color: black;
+    text-decoration: solid;
+    
+}
+
+
+
+

@@ -1,0 +1,12 @@
+ALTER TABLE lokale ADD CONSTRAINT zweryfikuj_kod_pocztowy CHECK (kod_pocztowy_lokalu = '60-778' OR kod_pocztowy_lokalu = '60-475' OR kod_pocztowy_lokalu = '61-224' OR kod_pocztowy_lokalu = '60-102' OR kod_pocztowy_lokalu = '60-194' OR kod_pocztowy_lokalu = '60-480' OR kod_pocztowy_lokalu = '60-619' OR kod_pocztowy_lokalu = '61-602' OR kod_pocztowy_lokalu = '60-681' OR kod_pocztowy_lokalu = '60-103');
+ALTER TABLE lokale ADD CONSTRAINT zweryfikuj_stan_prawny CHECK (stan_prawny = 'komunalny' OR stan_prawny = 'wspólnota mieszkaniowa' OR stan_prawny = 'współwłasność');
+ALTER TABLE grzejniki ADD CONSTRAINT zweryfikuj_rodzaj_grzejnika CHECK (rodzaj_grzejnikow = 'elektryczne' OR rodzaj_grzejnikow = 'żeliwne' OR rodzaj_grzejnikow = 'panelowe' OR rodzaj_grzejnikow = 'drabinowe');
+ALTER TABLE lokale ADD CONSTRAINT bool_winda CHECK (winda = '0' OR winda = '1');
+ALTER TABLE lokale ADD CONSTRAINT bool_przyst_niepelnospr CHECK (przyst_niepelnospr = '0' OR przyst_niepelnospr = '1');
+ALTER TABLE instalacje ADD CONSTRAINT bool_woda CHECK (woda = '0' OR woda = '1');
+ALTER TABLE instalacje ADD CONSTRAINT bool_kanalizacja CHECK (kanalizacja = '0' OR kanalizacja = '1');
+ALTER TABLE instalacje ADD CONSTRAINT bool_gazowa CHECK (gazowa = '0' OR gazowa = '1');
+ALTER TABLE instalacje ADD CONSTRAINT bool_elektryczna CHECK (elektryczna = '0' OR elektryczna = '1');
+ALTER TABLE instalacje ADD CONSTRAINT zweryfikuj_typ_ogrzewania CHECK (typ_ogrzewania = 'piec węglowy' OR typ_ogrzewania = 'piec elektryczny' OR typ_ogrzewania = 'piec gazowy' OR typ_ogrzewania = 'sieć miejska');
+ALTER TABLE dokumenty ADD CONSTRAINT zweryfikuj_typ_dokumentu CHECK (typ_dokumentu = 'protokół zdawczo-odbiorczy' OR 'protokół zerwania umowy');
+ALTER TABLE dokumenty ADD CONSTRAINT zweryfikuj_date CHECK (data_rozpoczecia_okresu_waznosci < data_zakonczenia_okresu_waznosci AND data_rozpoczecia_okresu_waznosci < data_zakonczenia_najmu);
